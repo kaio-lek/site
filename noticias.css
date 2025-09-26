@@ -1,0 +1,216 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    color: #333;
+    line-height: 1.6;
+}
+
+.cabecalho-site {
+    background: linear-gradient(90deg, #006400, #008000);
+    color: white;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-site {
+    font-family: 'Lora', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.navegacao-principal ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navegacao-principal ul li {
+    margin-left: 2.5rem;
+}
+
+.navegacao-principal ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.navegacao-principal ul li a:hover {
+    color: #FFD700;
+}
+
+.banner-capa {
+    background: linear-gradient(rgba(0,100,0,0.5), rgba(139,0,0,0.5));
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #8B0000;
+    padding: 0 1rem;
+}
+
+.banner-capa h1 {
+    font-family: 'Lora', serif;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.banner-capa p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.conteudo-principal {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.menu-lateral {
+    flex: 1;
+    min-width: 280px;
+    background-color: #F9F9F9;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.menu-lateral h2 {
+    margin-top: 0;
+    font-family: 'Lora', serif;
+    font-size: 1.3rem;
+    color: #006400;
+    border-bottom: 3px solid #8B0000;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.menu-item {
+    width: 100%;
+    background-color: #8B4513;
+    color: white;
+    border: none;
+    padding: 0.9rem;
+    margin: 0.7rem 0;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.menu-item:hover, .menu-item.active {
+    background-color: #7A2E0E;
+    transform: translateX(5px);
+}
+
+
+.submenu {
+    display: none;
+    margin-left: 1.5rem;
+    margin-top: 0.7rem;
+}
+
+.submenu.active {
+    display: block;
+}
+
+.submenu-item {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    padding: 0.6rem;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.submenu-item:hover {
+    color: #8B0000;
+    text-decoration: underline;
+}
+
+.submenu-item:hover {
+    color: #8B0000;
+    text-decoration: underline;
+}
+
+.noticia {
+    flex: 3;
+    min-width: 500px;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.noticia h2 {
+    font-family: 'Lora', serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #006400;
+}
+
+.noticia h3 {
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+    color: #8B0000;
+}
+
+.noticia p {
+    margin-bottom: 1rem;
+    text-align: justify;
+    font-size: 1.05rem;
+}
+
+.noticia .autor {
+    margin-top: 2rem;
+    font-style: italic;
+    color: #555;
+}
+
+.rodape-site {
+    background: #006400;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.rodape-site a.social {
+    color: #FFD700;
+    text-decoration: none;
+    margin: 0 0.3rem;
+}
+
+.rodape-site a.social:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+    .conteudo-principal {
+        flex-direction: column;
+    }
+
+    .menu-lateral, .noticia {
+        min-width: 100%;
+    }
+}
